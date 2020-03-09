@@ -415,6 +415,7 @@ p, span {
   }
   .company_list .company_item {
     font-size: 14px;
+    max-width: 300px;
   }
   .company_list .company_item:nth-child(1) {
     text-align: left;
@@ -582,6 +583,9 @@ p, span {
   }
   .access_box {
     margin: 32px 10%;
+  }
+  .access_list .access_item p, .access_list .access_item a {
+    line-height: 1.3;
   }
 }
 
