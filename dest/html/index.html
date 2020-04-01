@@ -7,6 +7,9 @@
     <meta property="og:description" content="ページ説明" />
     <meta property="og:image" content="https://startup-technology.github.io/wasabiya-corp/images/ogp.png" />
 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../js/script.min.js"></script>
+
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
@@ -16,13 +19,33 @@
   <body>
     <header class="header">
       <img src="../images/logo.png" alt="logo">
+
+      <ul class="header_list">
+        <li class="header_item">
+          <a href="#about">
+            <span>「わさびや」とは</span>
+          </a>
+        </li>
+
+        <li class="header_item">
+          <a href="#company">
+            <span>会社概要</span>
+          </a>
+        </li>
+
+        <li class="header_item">
+          <a href="#access">
+            <span>アクセス</span>
+          </a>
+        </li>
+      </ul>
     </header>
 
     <div class="top">
       <h1>WASABIYA<br>Corp.</h1>
     </div>
 
-    <div class="about">
+    <div id="about" class="about">
       <p class="title">
         「わさびや」はなぜ「わさびや」なのか
       </p>
@@ -48,6 +71,7 @@
     </div>
 
     <div class="how">
+      <img src="../images/logoMark.png" alt="logo">
       <p class="title">
         「四つ葉の山葵」とは
       </p>
@@ -108,9 +132,9 @@
       </ul>
     </div>
 
-    <div class="company">
+    <div id="company" class="company">
       <div class="company_title">
-        弊社概要
+        会社概要
       </div>
 
       <ul class="company_list">
@@ -202,7 +226,7 @@
       </div>
     </div>
 
-    <div class="access">
+    <div id="access" class="access">
       <div class="access_title">
         アクセス
       </div>
