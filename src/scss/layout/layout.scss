@@ -210,9 +210,11 @@ p,span {
 
     .how_item {
       position: relative;
-      padding-left: 30px;
-      line-height: 1.5em;
-      padding: .5em .5em .5em 51px;
+      padding-left: 51px;
+      margin: 10px 0;
+      height: 45px;
+      display: flex;
+      align-items: center;
 
       &::before {
         position: absolute;
@@ -228,8 +230,7 @@ p,span {
         line-height: 40px;
         text-align: center;
         top: 50%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
+        transform: translate(0, -50%);
       }
     }
   }
