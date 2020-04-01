@@ -328,9 +328,17 @@ p, span {
 
 .how_list .how_item {
   position: relative;
-  padding-left: 30px;
-  line-height: 1.5em;
-  padding: .5em .5em .5em 51px;
+  padding-left: 51px;
+  margin: 10px 0;
+  height: 45px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .how_list .how_item::before {
@@ -347,9 +355,9 @@ p, span {
   line-height: 40px;
   text-align: center;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 @media screen and (max-width: 760px) {
