@@ -144,16 +144,78 @@ p, span {
   height: 80px;
   width: 100%;
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .header img {
-  width: 200px;
-  padding-top: 22px;
+  height: 32px;
+  padding-top: 23px;
+}
+
+.header_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_list .header_item {
+  list-style: none;
+  font-size: 14px;
+  color: #333;
+  margin-left: 26px;
+  padding-top: 31px;
+}
+
+.header_list .header_item a {
+  text-decoration: none;
+  position: relative;
+}
+
+.header_list .header_item a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #04af50;
+  border-radius: 8px;
+  position: absolute;
+  top: 18px;
+  left: 44%;
+  opacity: 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.header_list .header_item a:hover::before {
+  opacity: 1;
+}
+
+.header_list .header_item span {
+  font-size: 14px;
+  color: #333;
 }
 
 @media screen and (max-width: 760px) {
   .header {
-    height: 68px;
+    height: 110px;
+    display: block;
+  }
+  .header_list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .header_list .header_item {
+    padding-top: 27px;
+    margin: 0 10px;
   }
   .header img {
     padding-top: 19px;
@@ -242,6 +304,11 @@ p, span {
   background: #fff;
   text-align: center;
   padding: 90px 0;
+}
+
+.how img {
+  width: 95px;
+  margin-bottom: 10px;
 }
 
 .how_text {
