@@ -265,8 +265,12 @@ p, span {
 }
 
 .about_text {
-  padding: 10px 0;
-  line-height: 2;
+  padding: .5em;
+  text-align: left;
+  font-size: 20px;
+  margin: auto;
+  max-width: 600px;
+  display: flex;
 }
 
 .about .line {
@@ -277,7 +281,7 @@ p, span {
   background: -o-linear-gradient(transparent 70%, #04af50 70%, #04af50 90%, transparent 90%);
   background: linear-gradient(transparent 70%, #04af50 70%, #04af50 90%, transparent 90%);
   font-size: 18px;
-  margin: 73px 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .about span {
